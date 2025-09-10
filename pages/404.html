@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/swwhite.png" type="image/x-icon">
+    <title>Página não encontrada</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            height: 100dvh;
+        }
+        .container {
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        .content {
+            width: 100dvh;
+            max-width: 48rem;
+            text-align: center;
+        }
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 3rem;
+        }
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 1.875rem;
+            }
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+            padding-bottom: 2px;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #cccccc;
+        }
+
+        .videos,video{
+            height: 250px;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="videos">
+                <video src="/images/logo.png"></video>
+            </div>
+        <div class="content">
+            <h1>A página solicitada não existe ou ocorreu outro erro. (404)</h1>
+            <a href="/pages/homepage.html">Página Inicial</a>
+</body>
+</html>
