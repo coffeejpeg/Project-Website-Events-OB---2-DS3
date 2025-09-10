@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouro Branco Eventos - Cadastro</title>
+    <link rel="stylesheet" href="/css/signup.css">
+    <script src="/js/validationregister.js" defer></script>
+</head>
+<body>
+    
+    <nav class="allnavbar" id="navb">
+        <div class="navconteiner">
+            <a href="/pages/homepage.html"><img class="logoeventosob" src="/images/logo.png" alt="OBEVENTOSlogo"></a>
+            <div class="navlinks">
+            <a href="/pages/homepage.html" class="txt">Início</a>
+            <a href="/pages/about.html" class="txt">Sobre</a>
+            <a href="/pages/partys.html" class="txt">Eventos</a>
+            </div>
+            
+            <div class="navsign">
+            <!-- <a href="#" class="navbtin"><button type="button"class="singinbtn">Entrar</button></a> -->
+            <a href="/pages/signup.html" class="navbtup"><button type="button" class="singupbtn">Registrar</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="form-txt">
+            <h1 class="TT">FAÇA SEU CADASTRO!</h1>
+            <p class="DT">Divulgue já seu evento aqui conosco!</p>
+        </div>
+
+        <div class="frm">
+        <form action="/pages/homepage.html" class="alllog" method="post">
+            <div class="nickall">
+            <label for="name">Nome Completo</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+            </div>
+
+            <div class="emailall">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Seu email" required>
+            </div>
+
+            <div class="passwordall">
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Sua senha" required>
+            </div>
+
+            <div class="confirmall">
+            <label for="confirm-password">Confirmar Senha</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha" required>
+            </div>
+
+            <div class="namecomnyall">
+            <label for="company-type">Nome de empresa</label>
+            <input type="text" id="company-type" name="company-type" placeholder="Seu nome de empresa" required>
+            </div>
+
+            <div class="adressall">
+            <label for="address">Endereço</label>
+            <select id="address" name="address" required onchange="document.getElementById('outra-endereco').style.display = this.value === 'outra' ? 'block' : 'none';">
+                <option value="" disabled selected>Selecione seu endereço</option>
+                <option value="centro">Centro</option>
+                <option value="santa-maria">Siderúrgica</option>
+                <option value="sao-jose">São José</option>
+                <option value="sao-cristovao">São Cristóvão</option>
+                <option value="sao-lucas">São Lucas</option>
+                <option value="sao-sebastiao">São Sebastião</option>
+                <option value="sao-joao">São João</option>
+                <option value="ouro-verde">Ouro Verde</option>
+                <option value="ouro-preto">Ouro Preto</option>
+                <option value="ouro-branco">Ouro Branco</option>
+                <option value="outra">Outro (especificar)</option>
+            </select>
+            <input type="text" id="outra-endereco" name="outra-endereco" placeholder="Digite seu endereço" style="display:none; margin-top:8px;" />
+            </div>
+
+            <div class="bairroall">
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" name="bairro" placeholder="rua, nº, bairro (Ex: Rua das Flores, 123, Centro)" required>
+            </div>
+
+            <button type="submit" class="registerbtn">Registrar</button>
+            
+    <div class="imgplubic"><img src="/images/atrações.png" alt="atraction"></div>
+        </form>
+        </div>
+    
+    </main>
+
+    <div class="notify"></div>
+
+</body>
+</html>
